@@ -8,3 +8,16 @@
 
 
 /* DEBUG */
+
+.debug [class*="container-"] {
+    background-color: yellow;
+}
+
+.debug .row {
+    background-color: lightcoral;
+}
+
+.debug [class*="col-"] {
+    background-color: lawngreen;
+    border: 2px dashed aqua;
+}
