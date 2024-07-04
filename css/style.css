@@ -6,12 +6,26 @@
     GENERAL
 */
 
+:root {
+    --my-aside-wdt: 50px;
+    --my-aside-hgt: calc(100vh - var(--my-header-hgt));
+    --my-header-hgt: 50px;
+
+}
+
 .my-header {
-    height: 50px;
+    height: var(--my-header-hgt);
 }
 
 .my-aside {
-    height: calc(100vh - 50px);
+    height: var(--my-aside-hgt);
+    width: var(--my-aside-wdt);
+}
+
+@media screen and (min-width:769px) {
+    :root {
+        --my-aside-wdt: 150px;
+    }
 }
 
 
