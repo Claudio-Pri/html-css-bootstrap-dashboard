@@ -6,6 +6,14 @@
     GENERAL
 */
 
+.my-header {
+    height: 50px;
+}
+
+.my-aside {
+    height: calc(100vh - 50px);
+}
+
 
 /* DEBUG */
 
