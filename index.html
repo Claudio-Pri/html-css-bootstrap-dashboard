@@ -113,16 +113,80 @@
                     <div class="row">
 
                         <!-- MAIN-HEADER -->
-                        <div class="col-12 bg-primary mb-3 py-4 main-header text-white">
+                        <div class="col-12 bg-primary mb-3 py-4 main-header text-start text-white">
                             <div class="row">
-                                <div class="col-12 col-md-4 col-lg-2 order-md-1">
+                                <div class="col-12 col-md-4 col-lg-2 order-md-1 mb-2">
                                     <span class="me-2">Nuovo Studente</span>
-                                    <button type="button" class="btn btn-outline-light">
+                                    <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                                         <i class="fa-solid fa-plus"></i>
                                     </button>
+
+
+                                    <!-- OFFCANVAS -->
+                                    <div class="offcanvas offcanvas-end w-50" data-bs-backdrop="static" tabindex="-1"
+                                        id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo
+                                                studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="exampleInputName1" class="form-label">
+                                                            Nome
+                                                        </label>
+                                                        <input type="text" class="form-control" id="exampleInputName1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="exampleInputName2" class="form-label">
+                                                            Cognome
+                                                        </label>
+                                                        <input type="text" class="form-control" id="exampleInputName2"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="exampleInputEmail1" class="form-label">
+                                                            Email address
+                                                        </label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="exampleInputPassword1" class="form-label">
+                                                            Password
+                                                        </label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1" aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="exampleInputAddress1" class="form-label">
+                                                            Indirizzo
+                                                        </label>
+                                                        <input type="text" class="form-control"
+                                                            id="exampleInputAddress1" aria-describedby="emailHelp">
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">1</div>
+                                                    <div class="col-4">2</div>
+                                                    <div class="col-2">3</div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="col-12 col-md-4 col-lg-6">
+                                <div class="col-12 col-md-4 col-lg-6  mb-2">
                                     <span class="fs-4 fw-bold me-2">Boolean</span>
 
                                     <ul class="list-unstyled d-flex flex-wrap">
@@ -162,7 +226,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="col-12 col-md-4 col-lg-4">
+                                <div class="col-12 col-md-4 col-lg-4 mb-2">
                                     <p class="card-text fw-medium">
                                         Studenti online negli ultimi 30 minuti
                                     </p>
