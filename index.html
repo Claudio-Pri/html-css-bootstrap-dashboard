@@ -20,36 +20,31 @@
 <body class="debug">
 
     <!-- header -->
-    <header class="p-2 my-header d-flex align-items-center">
-        <!-- da gestire position header -->
-        <div class="container-fluid p-0">
-            <div class="row flex-nowrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="col-auto d-flex align-items-center link-body-emphasis text-decoration-none">
-                    <img src="img/logo.svg" alt="boolean logo" class="d-none d-md-block">
-                    <!-- <img src="img/mobile-logo.png" alt="" class="d-md-none "> -->
-                </a>
-
-                <form class="col-12 col-md mb-lg-0 me-lg-3 px-1" role="search">
-                    <input type="search" class="form-control bg-body-secondary"
-                        placeholder="Prova a cercare: Lezioni di Bootstrap" aria-label="Search">
-                </form>
-
-                <div class="col-auto d-flex text-end px-0">
-                    <a href="#" class="d-none d-md-block link-body-emphasis text-decoration-none px-1">
-                        <i class="fa-solid fa-list-ul"></i>
-                    </a>
-                    <a href="#" class="d-none d-md-block link-body-emphasis text-decoration-none px-1">
-                        <i class="fa-solid fa-list-ul"></i>
-                    </a>
-                    <a href="#" class="d-none d-md-block link-body-emphasis text-decoration-none px-1">
-                        <i class="fa-solid fa-list-ul"></i>
-                    </a>
-                    <a href="#" class="d-block link-body-emphasis text-decoration-none px-1">
-                        <i class="fa-solid fa-list-ul"></i>
-                    </a>
+    <header class="my-header">
+        <div class="container-fluid h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-auto">
+                    <img src="img/logo.svg" alt="Boolean logo" class="d-none d-lg-block">
+                    <div class="my-mobile-logo d-lg-none">
+                        <img src="img/mobile-logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Prova a cercare...">
+                    </div>
+                </div>
+                <div class="col-auto text-end">
+                    <i class="fa-solid fa-list ms-1 d-none d-lg-inline-block"></i>
+                    <i class="fa-solid fa-list ms-1 d-none d-lg-inline-block"></i>
+                    <i class="fa-solid fa-list ms-1 d-none d-lg-inline-block"></i>
+                    <i class="fa-solid fa-list ms-1 text-bg-danger"></i>
+                    <!-- dropdown qui -->
                 </div>
             </div>
         </div>
+
     </header>
     <!-- /header -->
 
@@ -70,18 +65,19 @@
 
                         <div class="col-12 bg-primary mb-3 main-header text-white">
                             <div class="row">
+                                <div class="col-12 col-md-4 col-lg-2 order-md-1 bg-danger ">header right</div>
                                 <div class="col-12 col-md-4 col-lg-6">
                                     <span class="fs-4 fw-bold">Boolean</span>
                                     <span class="badge rounded-pill bg-secondary bg-opacity-25">New</span>
                                 </div>
                                 <div class="col-12 col-md-4 col-lg-4 bg-success">header mid</div>
-                                <div class="col-12 col-md-4 col-lg-2 bg-danger">header right</div>
+
                             </div>
                         </div>
 
 
 
-                        <div class="col-12 col-md-7">
+                        <div class="col-12 col-lg-7">
                             <div class="row g-4">
                                 <div class="col-12">
                                     <div class="card">
@@ -110,7 +106,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-5">
+                        <div class="col-12 col-lg-5">
                             <div class="row g-4">
                                 <div class="col-12">
                                     <div class="card">

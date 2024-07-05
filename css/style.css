@@ -20,8 +20,10 @@
     top: 0;
     right: 0;
     left: 0; */
+}
 
-
+.my-mobile-logo {
+    width: 40px;
 }
 
 .my-aside {
@@ -32,11 +34,13 @@
 .my-main {
     width: var(--my-main-wdt);
     /* altezza main */
+    height: var(--my-aside-hgt);
+    overflow-y: auto;
 }
 
 
-/* media query MD per side nav */
-@media screen and (min-width:769px) {
+/* media query LG per side nav */
+@media screen and (min-width:992px) {
     :root {
         --my-aside-wdt: 150px;
     }
@@ -45,11 +49,8 @@
 
 /* DEBUG */
 
-.debug .main-header {
-    min-height: 80px;
-}
 
-/* .debug [class*="container-"] {
+.debug [class*="container-"] {
     background-color: yellow;
 }
 
@@ -60,4 +61,4 @@
 .debug [class*="col-"] {
     background-color: lawngreen;
     border: 2px dashed aqua;
-} */
+}
