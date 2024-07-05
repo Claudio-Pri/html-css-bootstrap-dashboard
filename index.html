@@ -57,66 +57,78 @@
     <main>
         <div class="container-fluid">
             <div class="row text-center text-md-start">
-                <div class="my-aside bg-danger my-aside p-0">
-                    <div class="d-flex flex-column p-0 h-100 w-100 text-bg-dark">
+                <div class="my-aside d-flex flex-column p-0 py-3 text-bg-dark my-aside p-0">
 
-                        <ul class="nav nav-pills flex-column mb-auto text-white">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-white" aria-current="page">
-                                    <i class="fa-solid fa-house pe-none me-2 "></i>
-                                    <span class="d-none d-md-inline-block">Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link text-white">
-                                    <i class="fa-solid fa-chart-simple pe-none me-2"></i>
-                                    <span class="d-none d-md-inline-block">Stats</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link text-white">
-                                    <i class="fa-solid fa-signal pe-none me-2"></i>
-                                    <span class="d-none d-md-inline-block">Signals</span>
-                                </a>
-                            </li>
 
-                        </ul>
-
-                        <div class="dropdown">
-
-                            <a href="#"
-                                class="nav-link text-white d-flex justify-content-center align-items-center text-decoration-none dropdown-toggle py-3"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-gear pe-none me-2"></i>
-
-                                <span class="d-none d-md-inline-block">Admin</span>
+                    <ul class="nav nav-pills flex-column mb-auto text-white">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white" aria-current="page">
+                                <i class="fa-solid fa-house pe-none me-2 "></i>
+                                <span class="d-none d-md-inline-block">Home</span>
                             </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-chart-simple pe-none me-2"></i>
+                                <span class="d-none d-md-inline-block">Stats</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-signal pe-none me-2"></i>
+                                <span class="d-none d-md-inline-block">Signals</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="dropdown">
+
+                        <a href="#"
+                            class="nav-link text-white d-flex justify-content-center align-items-center text-decoration-none dropdown-toggle py-3"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear pe-none me-2"></i>
+
+                            <span class="d-none d-md-inline-block">Admin</span>
+                        </a>
 
 
-                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" style="">
-                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                            </ul>
-                        </div>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" style="">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
                     </div>
+
                 </div>
 
 
-                <div class="my-main">
+                <div class="my-main overflow-y-auto">
                     <div class="row">
 
-                        <div class="col-12 bg-primary mb-3">MAIN-HEADER</div>
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 bg-primary mb-3 main-header text-white">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-6 bg-danger">
+                                    <span class="fs-4 fw-bold">Boolean</span>
+                                    <span class="badge rounded-pill text-bg-secondary">New</span>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-4 bg-success">header mid</div>
+                                <div class="col-12 col-md-4 col-lg-2 bg-danger">header right</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-12 col-md-7">
                             <div class="row g-4">
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            col left top
+                                            Prossime classi
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>
@@ -128,7 +140,7 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            col left bottom
+                                            F.A.Q.
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>
@@ -140,12 +152,12 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-5">
                             <div class="row g-4">
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            col right top
+                                            To do
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>
@@ -157,7 +169,7 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
-                                            col right bottom
+                                            img-Utenti attivi
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">An item</li>

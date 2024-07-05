@@ -40,6 +40,10 @@
 
 /* DEBUG */
 
+.debug .main-header {
+    min-height: 80px;
+}
+
 /* .debug [class*="container-"] {
     background-color: yellow;
 }
