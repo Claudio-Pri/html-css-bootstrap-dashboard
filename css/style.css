@@ -16,6 +16,12 @@
 
 .my-header {
     height: var(--my-header-hgt);
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+
+
 }
 
 .my-aside {
@@ -25,9 +31,8 @@
 
 .my-main {
     width: var(--my-main-wdt);
+    /* altezza main */
 }
-
-
 
 
 /* media query MD per side nav */
