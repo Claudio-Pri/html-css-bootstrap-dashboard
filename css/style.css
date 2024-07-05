@@ -9,7 +9,8 @@
 :root {
     --my-aside-wdt: 50px;
     --my-aside-hgt: calc(100vh - var(--my-header-hgt));
-    --my-header-hgt: 50px;
+    --my-header-hgt: 80px;
+    --my-main-wdt: calc(100% - var(--my-aside-wdt));
 
 }
 
@@ -22,6 +23,14 @@
     width: var(--my-aside-wdt);
 }
 
+.my-main {
+    width: var(--my-main-wdt);
+}
+
+
+
+
+/* media query MD per side nav */
 @media screen and (min-width:769px) {
     :root {
         --my-aside-wdt: 150px;

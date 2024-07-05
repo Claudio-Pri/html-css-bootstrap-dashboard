@@ -20,30 +20,31 @@
 <body class="debug">
 
     <!-- header -->
-    <header class="p-3 my-header">
+    <header class="p-2 my-header d-flex align-items-center">
         <!-- da gestire position header -->
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-center justify-content-lg-start">
+        <div class="container-fluid p-0">
+            <div class="row flex-nowrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="col-auto d-flex align-items-center link-body-emphasis text-decoration-none">
-                    <img src="img/logo.svg" alt="boolean logo">
+                    <img src="img/logo.svg" alt="boolean logo" class="d-none d-md-block">
+                    <!-- <img src="img/mobile-logo.png" alt="" class="d-md-none "> -->
                 </a>
 
-                <form class="col-12 col-md mb-lg-0 me-lg-3 px-3" role="search">
+                <form class="col-12 col-md mb-lg-0 me-lg-3 px-1" role="search">
                     <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Bootstrap"
                         aria-label="Search">
                 </form>
 
-                <div class="col-auto d-flex text-end">
-                    <a href="#" class="d-block link-body-emphasis text-decoration-none px-2">
+                <div class="col-auto d-flex text-end px-0">
+                    <a href="#" class="d-none d-md-block link-body-emphasis text-decoration-none px-1">
                         <i class="fa-solid fa-list-ul"></i>
                     </a>
-                    <a href="#" class="d-block link-body-emphasis text-decoration-none px-2">
+                    <a href="#" class="d-none d-md-block link-body-emphasis text-decoration-none px-1">
                         <i class="fa-solid fa-list-ul"></i>
                     </a>
-                    <a href="#" class="d-block link-body-emphasis text-decoration-none px-2">
+                    <a href="#" class="d-none d-md-block link-body-emphasis text-decoration-none px-1">
                         <i class="fa-solid fa-list-ul"></i>
                     </a>
-                    <a href="#" class="d-block link-body-emphasis text-decoration-none px-2">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none px-1">
                         <i class="fa-solid fa-list-ul"></i>
                     </a>
                 </div>
@@ -57,7 +58,7 @@
         <div class="container-fluid">
             <div class="row text-center text-md-start">
                 <div class="my-aside bg-danger my-aside p-0">
-                    <div class="d-flex flex-column flex-shrink-0 p-0 h-100 w-100 text-bg-dark">
+                    <div class="d-flex flex-column p-0 h-100 w-100 text-bg-dark">
 
                         <ul class="nav nav-pills flex-column mb-auto text-white">
                             <li class="nav-item">
@@ -106,8 +107,68 @@
                 </div>
 
 
-                <div class="col bg-danger-subtle">
-                    Main body
+                <div class="my-main">
+                    <div class="row">
+
+                        <div class="col-12 bg-primary mb-3">MAIN-HEADER</div>
+                        <div class="col-12 col-md-8">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            col left top
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            col left bottom
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            col right top
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            col right bottom
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
