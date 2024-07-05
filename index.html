@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template HTML CSS</title>
+    <title>Bootstrap Dashboard</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -58,7 +58,7 @@
                         </ul>
 
                     </div>
-                    <!-- dropdown qui -->
+
                 </div>
             </div>
         </div>
@@ -70,6 +70,8 @@
     <main>
         <div class="container-fluid">
             <div class="row text-center text-md-start">
+
+                <!-- ASIDE -->
                 <div class="my-aside d-flex flex-column justify-content-between my-bg-dark pt-4 px-lg-4">
 
                     <ul class="list-unstyled py-2 text-center text-lg-start">
@@ -106,9 +108,11 @@
                 </div>
 
 
+                <!-- MAIN -->
                 <div class="my-main">
                     <div class="row">
 
+                        <!-- MAIN-HEADER -->
                         <div class="col-12 bg-primary mb-3 main-header text-white">
                             <div class="row">
                                 <div class="col-12 col-md-4 col-lg-2 order-md-1 bg-danger ">header right</div>
@@ -122,19 +126,49 @@
                         </div>
 
 
-
-                        <div class="col-12 col-lg-7">
+                        <!-- MAIN-BODY -->
+                        <div class="col-12 col-lg-7 mb-4">
                             <div class="row g-4">
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-header">
                                             Prossime classi
                                         </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                        </ul>
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" colspan="2" class="fw-normal">Nome</th>
+                                                    <th scope="col" class="fw-normal d-none d-md-block">Data inizio</th>
+                                                    <th scope="col" class="fw-normal">ROI</th>
+                                                    <th scope="col" class="fw-normal">Stato</th>
+                                                    <th scope="col" class="fw-normal text-center">Azioni</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" colspan="2" class="fw-normal">
+                                                        <img class="img-fluid my-table-img rounded-circle me-2"
+                                                            src="img/class-avatar.jpg" alt="">
+                                                        <span>Classe 130</span>
+                                                    </th>
+                                                    <td class="d-none d-md-block">05 Lug 2024</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn btn-outline-dark">
+                                                            <i class="fa-solid fa-pen"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-dark">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="col-12">
