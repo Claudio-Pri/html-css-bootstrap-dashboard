@@ -155,8 +155,11 @@
                                                         <label for="exampleInputEmail1" class="form-label">
                                                             Email address
                                                         </label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control"
+                                                                aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <label for="exampleInputPassword1" class="form-label">
@@ -177,9 +180,59 @@
 
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-6">1</div>
-                                                    <div class="col-4">2</div>
-                                                    <div class="col-2">3</div>
+                                                    <div class="col-6">
+                                                        <label for="exampleInputName1" class="form-label">
+                                                            Città
+                                                        </label>
+                                                        <input type="text" class="form-control" id="exampleInputName1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <label class="form-label">
+                                                            Stato
+                                                        </label>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Seleziona...</option>
+                                                            <option value="1">Italia (IT)</option>
+                                                            <option value="2">Spagna (ES)</option>
+                                                            <option value="3">Regno Unito (UK)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <label for="exampleInputName1" class="form-label">
+                                                            CAP
+                                                        </label>
+                                                        <input type="text" class="form-control" id="exampleInputName1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="exampleInputfile1" class="form-label">
+                                                            Foto
+                                                        </label>
+                                                        <div class="mb-3">
+                                                            <input class="form-control" type="file"
+                                                                id="formFileMultiple" multiple>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault" required>
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Seleziona per proseguire
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <button type="button" class="btn btn-primary">Salva</button>
+                                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
